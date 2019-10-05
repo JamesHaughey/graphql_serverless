@@ -1,5 +1,5 @@
 provider "aws" {
-    region = "eu-west-1"
+    region = "us-east-1"
 }
 
 # Partial configuration the other settings bucket, region, dynamodb will be passed
