@@ -34,3 +34,9 @@ resource "aws_cognito_user_pool" "pool" {
     required            = true
   }
 }
+
+resource "aws_cognito_user_pool_client" "client" {
+  name            = "WebApp"
+  user_pool_id    = "${aws_cognito_user_pool.pool.id}"
+  generate_secret = false
+}
