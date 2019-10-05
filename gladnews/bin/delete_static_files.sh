@@ -13,7 +13,7 @@ echo "Deleting static assets from ${STAGE}..."
 
 BUCKET_NAME=$(aws \
     cloudformation describe-stacks \
-    --stack-name "gladnews-${STAGE}" \
+    --stack-name "graphql-serverless-${STAGE}" \
     --query "Stacks[0].Outputs[?OutputKey=='WebSiteBucket'] | [0].OutputValue" \
     --output text)
 
