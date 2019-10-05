@@ -12,7 +12,7 @@ custom:
 
 provider:
   name: aws
-  region: eu-west-1
+  region: us-east-1
   runtime: nodejs10.x
 
 functions:
