@@ -20,7 +20,18 @@ output "cognito_pool_id" {
   description = "The ID of the cognito pool created"
 }
 
-resource "aws_ssm_parameter" "cognito_pool_client" {
+resource "aws_ssm_parameter" "cognito_pool_client_name" {
+  name  = "${var.namespace}-pool-client-name"
+  type  = "String"
+  value = aws_cognito_user_pool_client.client.name
+}
+
+output "cognito_pool_client_name" {
+  value = aws_cognito_user_pool_client.client.name
+  description = "The ARN of the cognito pool client created"
+}
+
+resource "aws_ssm_parameter" "cognito_pool_client_id" {
   name  = "${var.namespace}-pool-client-id"
   type  = "String"
   value = aws_cognito_user_pool_client.client.id
