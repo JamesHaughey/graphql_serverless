@@ -1,8 +1,9 @@
-.serverless/
-static/aws-sdks/
-static/css/bootstrap-3.3.7.min.css
-static/css/bootstrap-theme-3.3.7.min.css
-static/js/bootstrap-3.3.7.min.js
-static/js/jquery-1.12.4.min.js
+gladnews/.serverless/
+gladnews/node_modules/
+gladnews/static/aws-sdks/
+gladnews/static/css/bootstrap-3.3.7.min.css
+gladnews/static/css/bootstrap-theme-3.3.7.min.css
+gladnews/static/js/bootstrap-3.3.7.min.js
+gladnews/static/js/jquery-1.12.4.min.js
 
 terraform/graph_ql/cognito/.terraform/

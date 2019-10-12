@@ -72,3 +72,16 @@ resources:
             MinTTL: 10
             ForwardedValues:
               QueryString: true
+
+package:
+  exclude:
+    - bin/**
+    - static/**
+    - resources/**
+    - package.json
+    - node_modules/**
+  include:
+    - node_modules/uuid/**
+    - node_modules/lodash/**
+    - node_modules/graphql/**
+    - node_modules/iterall/**
